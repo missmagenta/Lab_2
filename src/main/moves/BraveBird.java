@@ -7,7 +7,7 @@ public class BraveBird extends PhysicalMove {
     }
     @Override
     protected void applySelfDamage(Pokemon att, double damage) {
-        att.setMod(Stat.HP, (int)Math.round(damage/3));
+        att.setMod(Stat.HP, (int) Math.round(damage / 3));
     }
     @Override
     protected String describe() {
