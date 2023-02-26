@@ -6,6 +6,7 @@ public class Slash extends PhysicalMove {
         super(Type.NORMAL, 70, 100);
     }
 
+    @Override
     protected double calcCriticalHit(Pokemon att, Pokemon def) {
         if (att.getStat(Stat.SPEED) * 3 / 512.0 > Math.random()) {
             return 2.0;
@@ -13,6 +14,7 @@ public class Slash extends PhysicalMove {
             return 1.0;
         }
     }
+    @Override
     protected String describe() {
         return "attacks with an increased critical hit";
     }

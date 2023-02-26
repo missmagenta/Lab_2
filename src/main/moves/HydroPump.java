@@ -8,6 +8,7 @@ public class HydroPump extends SpecialMove {
     protected void applyOppDamage(Pokemon p, double damage) {
         p.setMod(Stat.HP, (int)Math.round(damage));
     }
+    @Override
     protected String describe() {
     return "blasts out a huge volume of water at high power";
     }

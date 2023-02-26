@@ -10,6 +10,7 @@ public class Facade extends PhysicalMove {
         super(Type.NORMAL, 70, 100);
     }
     private boolean special;
+    @Override
     protected void applyOppDamage(Pokemon def, double damage) {
         Status state = def.getCondition();
         special = true;
@@ -17,6 +18,7 @@ public class Facade extends PhysicalMove {
             def.setMod(Stat.HP, 2 * (int) Math.round(damage));
         }
     }
+    @Override
     protected String describe() {
         if (special) return "damages with double power";
         else return "damages";
