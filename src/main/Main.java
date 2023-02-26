@@ -1,8 +1,7 @@
 package main;
 
 import ru.ifmo.se.pokemon.*;
-import main.poks.*;
-import main.moves.*;
+import main.pokemons.*;
 
 public class Main {
     public static void main(String[] args) {
