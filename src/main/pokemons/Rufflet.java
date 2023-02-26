@@ -1,4 +1,4 @@
-package main.poks;
+package main.pokemons;
 import main.moves.*;
 import ru.ifmo.se.pokemon.*;
 
