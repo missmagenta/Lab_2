@@ -1,10 +1,6 @@
 package main.moves;
 import  ru.ifmo.se.pokemon.*;
 
-/**
- * Power is doubled if the user is burned, paralyzed, poisoned
- */
-
 public class Facade extends PhysicalMove {
     public Facade() {
         super(Type.NORMAL, 70, 100);
